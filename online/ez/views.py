@@ -70,7 +70,6 @@ class OpsUserUploadView(View):
 @method_decorator(csrf_exempt, name='dispatch')
 class ClientUserSignupView(View):
     def post(self, request):
-        # Handle form data
         username = request.POST.get('username')
         password = request.POST.get('password')
         email = request.POST.get('email')
