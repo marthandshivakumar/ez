@@ -66,7 +66,7 @@ class OpsUserUploadView(View):
         else:
             return JsonResponse({'message': 'Unauthorized or not an ops user'}, status=401)
 
-
+#customer login view
 @method_decorator(csrf_exempt, name='dispatch')
 class ClientUserSignupView(View):
     def post(self, request):
