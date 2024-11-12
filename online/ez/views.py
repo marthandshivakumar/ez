@@ -16,7 +16,7 @@ from django.views import View
 import mimetypes
 import os
 from django.views.decorators.csrf import csrf_exempt
-# Create your views here.
+
 
 @method_decorator(csrf_exempt, name='dispatch')
 class UserLoginView(View):
